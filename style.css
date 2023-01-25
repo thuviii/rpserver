@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #fff;
+}
+
+header{
+    background-image: linear-gradient(rgba(7, 7, 7, 0.7),rgba(7, 7, 7, 0.7)), url(img/preview.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.text-top-left{
+    font-weight: bolder;
+}
+
+nav img {
+    width: 80px;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+    margin-right: 2%;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 18px;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+}
+
+.nav-links ul li ::after{
+    content: '';
+    display: block;
+    background: #fff;
+    width: 0%;
+    height: 2px;
+    margin: auto;
+    transition: 0.7s;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+body{
+    background-color: #222;
+}
+
+.first-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50vh;
+    text-align: center;
+    margin-right: 15%;
+    margin-left: 15%;
+}
